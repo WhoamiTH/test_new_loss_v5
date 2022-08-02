@@ -1,0 +1,13 @@
+#PBS -N abalone19_normal_normal
+#PBS -l ngpus=1
+#PBS -l mem=46gb
+#PBS -l ncpus=8
+#PBS -l walltime=12:00:00
+#PBS -M han.tai@student.unsw.edu.au
+#PBS -m ae
+
+cd ~/test_other_database_mwone/test_abalone19/ijcai_normal_normal  && ~/software/python3_env/bin/python train_normal.py file_name=../1_year_data/abalone19_train_1.csv model_record_path=../1_year_result/ijcai_normal_normal/model_1/ file_record_path=../1_year_result/ijcai_normal_normal/record_1/ method_name=ijcai_normal_normal scaler_name=scaler_1.m pca=False pca_name=pca_1.m model_name=model_1/my_model
+cd ~/test_other_database_mwone/test_abalone19/ijcai_normal_normal  && ~/software/python3_env/bin/python train_normal.py file_name=../1_year_data/abalone19_train_2.csv model_record_path=../1_year_result/ijcai_normal_normal/model_1/ file_record_path=../1_year_result/ijcai_normal_normal/record_1/ method_name=ijcai_normal_normal scaler_name=scaler_2.m pca=False pca_name=pca_2.m model_name=model_2/my_model
+cd ~/test_other_database_mwone/test_abalone19/ijcai_normal_normal  && ~/software/python3_env/bin/python train_normal.py file_name=../1_year_data/abalone19_train_3.csv model_record_path=../1_year_result/ijcai_normal_normal/model_1/ file_record_path=../1_year_result/ijcai_normal_normal/record_1/ method_name=ijcai_normal_normal scaler_name=scaler_3.m pca=False pca_name=pca_3.m model_name=model_3/my_model
+cd ~/test_other_database_mwone/test_abalone19/ijcai_normal_normal  && ~/software/python3_env/bin/python train_normal.py file_name=../1_year_data/abalone19_train_4.csv model_record_path=../1_year_result/ijcai_normal_normal/model_1/ file_record_path=../1_year_result/ijcai_normal_normal/record_1/ method_name=ijcai_normal_normal scaler_name=scaler_4.m pca=False pca_name=pca_4.m model_name=model_4/my_model
+cd ~/test_other_database_mwone/test_abalone19/ijcai_normal_normal  && ~/software/python3_env/bin/python train_normal.py file_name=../1_year_data/abalone19_train_5.csv model_record_path=../1_year_result/ijcai_normal_normal/model_1/ file_record_path=../1_year_result/ijcai_normal_normal/record_1/ method_name=ijcai_normal_normal scaler_name=scaler_5.m pca=False pca_name=pca_5.m model_name=model_5/my_model
